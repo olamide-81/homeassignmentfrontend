@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+.card {
+   margin: 30px;
+}
+
+.message-list {
+   margin: 20px;
+   padding: 20px;
+   
+}

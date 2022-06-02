@@ -1,0 +1,18 @@
+.message-status {
+    color: green;
+    align-content: flex-end;
+    align-items: flex-end;
+}
+
+.message-card {
+    display: flex;
+    background-color: aqua;
+    flex-direction: row;
+}
+
+.message-header {
+    background-color: black;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}

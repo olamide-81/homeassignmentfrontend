@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+.container {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%)
+}
+.message-status {
+    color: green;
+    align-content: flex-end;
+    align-items: flex-end;
+    font-size: 13px;   
+}
+.modal-body {
+    align-items: center;
+    background-color: white;
+}
+.message {
+    background-color: blanchedalmond;
+    border-radius: 10px;
+    flex-direction: row;
+    display: flex;
+    padding: 10px;
+    margin: 20px;
+    width: 370px;
+    height: 60px;
+    justify-content: space-between;
+}
+.message-expand {
+    color: blue;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.message-header {
+    font-size: 15px;
+}
+.button {
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    height: 55px;
+    width: 140px;
+    align-content: center;
+    align-items: center;
+    border: 1px;
+    align-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+}
+
+.icon {
+    align-content: center;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.title {
+    background-color: cornflowerblue;
+    align-content: center;
+    align-items: center;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

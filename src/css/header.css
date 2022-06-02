@@ -1,0 +1,33 @@
+.nav-container {
+    background-color: blanchedalmond;
+    justify-content: space-between;
+    flex-direction: row;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+}
+
+.logout {
+    cursor: pointer;
+}
+
+.left {
+    background-color: blanchedalmond;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.email-tag {
+    background-color:aquamarine;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.right {
+    background-color: blanchedalmond;
+
+}
