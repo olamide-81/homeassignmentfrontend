@@ -17,7 +17,7 @@ function Header() {
   }
 
   const home = () => {
-    navigate('/home')
+    navigate('/')
   }
 
   return (
