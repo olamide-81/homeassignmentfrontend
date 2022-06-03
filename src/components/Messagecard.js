@@ -77,7 +77,7 @@ function Messagecard() {
             <h6 className='message-expand' onClick={() =>  {
               setFormModal(!formModal) 
               setModalinfo(id)
-              }}>{item.content} </h6>
+              }}> read more </h6>
             </div>
             <h6 className='message-status'> {item.isRead === true ? 'READ' : 'UNREAD' }</h6>
             </div>
