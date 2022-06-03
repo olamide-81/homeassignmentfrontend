@@ -69,7 +69,7 @@ function Messagecard() {
     <div className='container'>
 
       <br/>
-        <h4> Messages </h4>
+        <h4 className='page-header'> Messages </h4>
         <br/>
 
         {data.map((item, id) =>

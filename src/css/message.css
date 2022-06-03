@@ -69,3 +69,21 @@
     padding: 10px;
     text-align: center;
 }
+
+@media screen and (max-width: 800px) {
+    .message {
+        background-color: blanchedalmond;
+        border-radius: 10px;
+        flex-direction: row;
+        display: flex;
+        padding: 10px;
+        margin: 20px;
+        width: 300px;
+        height: 60px;
+        justify-content: space-between;
+    }
+
+    .page-header{
+        margin-top: 80px;
+    }
+}
