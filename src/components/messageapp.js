@@ -9,18 +9,21 @@ Label,Card, CardImg, CardText, Col, } from 'reactstrap'
 import '../css/message.css'
 import { Bell } from 'react-feather'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate, Navigate } from 'react-router-dom'
 import getMessage from '../redux/messageservice'
 import { toast } from 'react-toastify'
 
 
 function Messageapp() {
+  const navigate = useNavigate()
     const saved = JSON.parse(localStorage.getItem('user'))
+    if(!saved){
+      window.location = '/login';
+    }
     const name = saved.name
     const token = saved.token 
     const [messagesnum, setMessagesnum] = useState('')
     const [groupno, setGroup] = useState('')
-    const navigate = useNavigate()
     const [data, setData] = useState([])
 
     const message = () => {
@@ -43,11 +46,12 @@ function Messageapp() {
  data.forEach( v => {
    e += !v.isRead ? 1 : 0;
  })
-  const length = data.length
+
+  const { length } = data
    
   return (
     <div className='container'>
-        <h4>Welcome Back {name ? name : navigate('/login')}</h4>
+        <h4>Welcome Back {name ? name : <Navigate to='/login'></Navigate>}</h4>
         <br/>
         <div>
          <Bell size={25} className='icon'/>

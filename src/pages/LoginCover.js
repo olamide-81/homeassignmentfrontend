@@ -4,7 +4,7 @@ import '../css/login.css'
 import { useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { login, reset } from '../redux/authslice'
-import { toast } from 'react-toastify'
+import { toast } from 'react-toastify';
 import Spinner from '../components/Spinner.js'
 
 function Login() {
@@ -24,7 +24,7 @@ function Login() {
 
   useEffect(() => {
     if (isError) {
-      toast.error(message)
+      alert(message)
     }
 
     if (isSuccess || user) {
@@ -59,7 +59,8 @@ function Login() {
   return (
        <Card className='card'>
          <CardHeader className='card-header'> 
-            
+              <CardTitle className='card-title'> Home Assignment </CardTitle>
+              <CardText className='card-text'> A project to showcase my fullstack development skills given to me by SULTAN TEKIN on the 30th of May 2022</CardText>
          </CardHeader>
          <CardBody className='card-body'>
            
@@ -83,8 +84,8 @@ function Login() {
              </CardText>
              <CardText className='user-details'>
                  User 1 <br/>
-                 Email: user1@gmail.com <br/>
-                 Password: password
+                 Email: user2@gmail.com <br/>
+                 Password: password2
              </CardText>
          </CardFooter>
     </Card>

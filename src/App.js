@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 function App() {
   
   return (
+    <>
     <BrowserRouter>
     <Routes>
       <Route path="/home" element={<Home />} />
@@ -17,6 +18,7 @@ function App() {
       </Route>
     </Routes>
   </BrowserRouter>
+  </>
   );
 }
 
